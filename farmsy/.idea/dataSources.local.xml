@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-243.26053.27">
+    <data-source name="farmsy_db@localhost" uuid="1570a153-7ba1-4ea2-a45d-93f36b7d22ad">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
