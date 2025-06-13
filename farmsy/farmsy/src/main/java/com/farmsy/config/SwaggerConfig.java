@@ -15,10 +15,12 @@ public class SwaggerConfig {
 
 
 
-    @Bean
+    @Bean //allows Swagger to automatically generate documentation
+
     public OpenAPI farmEasyOpenAPI() {
-        return new OpenAPI()
-                .info(new Info().title("FarmEasy API"))
+        return new OpenAPI() // hold the entire structure of API doc
+                .info(new Info().title("FarmEasy API")) //appears at the top of Swagger UI.
+
                 .components(new Components()
                         .addSchemas("Farmer", new Schema<Farmer>()
                                 .example(getFarmerExample()))

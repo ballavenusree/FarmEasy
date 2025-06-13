@@ -39,6 +39,7 @@ public class SecurityConfig {
     @Bean
     public InMemoryUserDetailsManager userDetailsService(PasswordEncoder passwordEncoder) {
         UserDetails admin = User.builder()
+                // (.) call another method on the same object
                 .username("admin")
                 .password(passwordEncoder.encode("password"))
                 .roles("ADMIN")
@@ -57,4 +58,5 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+    //BCryptPasswordEncoder Protects against brute-force attacks
 }

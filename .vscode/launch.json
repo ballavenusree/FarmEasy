@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FarmsyApplication<farmsy>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.farmsy.FarmsyApplication",
+            "projectName": "farmsy",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
